@@ -1,0 +1,196 @@
+// // Home Content
+
+  .wrapper {
+    width: 70%;
+    margin-top: 10%;
+    height: 300px;
+    max-height: 100%;
+
+
+    h2 {
+      padding: 15px;
+    }
+
+    p {
+      padding:0 15px;
+    }
+  
+  }
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  // height: 85vh;
+  min-height: 610px;
+  width: 40%;
+  z-index: 100;
+  padding-top: 3%;
+
+  @media @tablet {
+    width: 80%;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+    line-height: 1.3;
+    font-size: 5rem;
+  }
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.type{
+  display: flex;
+  justify-content: space-around;
+}      
+
+.checkbox-container {
+  width: 48%;
+}
+
+#signup {
+  margin-top: 5%;
+}
+
+#first-name, #last-name {
+  width: 47%;
+}
+
+.already {
+  // background: @container;
+  .already-item {
+    width: 44%;
+  }
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+// .slider {}
+
+// .slide {
+//   width: 100%;
+//   position: absolute;
+//   min-height: 610px;
+//   background-repeat: no-repeat;
+//   background-position: bottom;
+//   background-size: cover;
+//   top: 0;
+// }
+
+// #slide-0 {
+//   background-image: url("../img/hero1.jpg");
+// }
+
+// #slide-1 {
+//   background-image: url("../img/hero2.jpg");
+// }
+
+.main-btn {
+  line-height: 1.4;
+  font-size: 1.8rem;
+  padding: 15px;
+  font-weight: 600;
+  background: @cta-button;
+  border-radius: 10px;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+// Section 2: Team
+
+.team {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 4% 0;
+
+  @media @tablet {
+    width: 100%;
+  }
+  
+
+  .member {
+    min-width: 200px;
+    width: 50%;
+    margin: 0 0 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+      img { background: black;
+      border-radius: 3%;
+      border: 10px solid @cta-button;
+      margin-bottom: -7px;
+      }
+      .label {
+        background: @cta-button;
+        border-radius: 3%;
+        border: 10px solid @cta-button;
+        }
+        
+      }
+      @media @phone {
+        width: 40%;
+      }
+      @media @small {
+        width: 50%;
+      }
+    }
+
+    img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 70%;
+
+
+    }
+    
+    .label {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10%;
+
+      p {
+        font-size: 2rem;
+
+      }
+    }
+
+    .name {
+      text-align: center;
+      font-size: 2rem;
+      padding: 2%;
+    }
+
+    .caption {
+      font-size:  1.2rem;
+      text-transform: uppercase;
+      color: @header-font-color;
+    }
+  }
+
+.navbar1 {
+  background: white;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,.08);
+}
